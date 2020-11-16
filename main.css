@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    cursor: default;
+    display: block;
+    width: 288px;
+    height: 96px;
+    font-family: "Arial";
+    font-size: 36px;
+    line-height: 96px;
+    color: white;
+    text-align: center;
+}
+
+html, body, form {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.tableWrapper {
+    display: block;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    margin-top: -277.5px;
+}
+
+.calcTable {
+    border-collapse: collapse;
+    margin: auto;
+    background: rgba(153,88,255,1);
+    background: -webkit-linear-gradient(rgba(153,88,255,1),rgba(27,82,255,1));
+    background: -moz-linear-gradient(rgba(153,88,255,1),rgba(27,82,255,1));
+    background: -o-linear-gradient(rgba(153,88,255,1),rgba(27,82,255,1));
+    background: linear-gradient(rgba(153,88,255,1),rgba(27,82,255,1));
+}
+
+.btn {
+    cursor: pointer;
+    height: 96px;
+    width: 96px;
+    color: white;
+    font-family: "Arial";
+    background-color: rgba(255,255,255,0);
+    font-size: 48px;
+    border: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    
+    .calcTable {
+        border-radius: 12px;
+    }
+    
+   .btnC {
+       border-top-right-radius: 12px;
+   }
+
+   .btnE {
+       border-bottom-left-radius: 12px;
+   }
+
+   .btnD {
+       border-bottom-right-radius: 12px;
+   }    
+    
+   .btn:hover {
+       background-color: rgba(255,255,255,0.6);
+   }
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btnWhite {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.resultBox {
+    cursor: default;
+    height: 72px;
+    width: 372px;
+    background-color: rgba(255,255,255,0);
+    font-size: 36px;
+    color: white;
+    font-family: "Arial";
+    text-align: right;
+    padding-right: 12px;
+    border: none;
+    border-top: solid 1.5px rgba(255,255,255,0.4);
+    border-bottom: solid 1.5px rgba(255,255,255,0.4);
+}
+
+.resultBox:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 384px) {
+    .heading {
+        width: 230.4px;
+        height: 76.8px;
+        font-size: 28.8px;
+        line-height: 76.8px;
+    }
+    
+    .tableWrapper {
+        margin-top: -222px;
+    }
+    
+    .btn {
+        height: 76.8px;
+        width: 76.8px;
+        font-size: 38.4px;
+    }
+    
+    .resultBox {
+        height: 57.6px;
+        width: 297.6px;
+        font-size: 28.8px;
+        padding-right: 9.6px;
+        border-top: solid 1.25px rgba(255,255,255,0.4);
+        border-bottom: solid 1.25px rgba(255,255,255,0.4);
+    }
+}
